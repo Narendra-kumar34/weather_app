@@ -23,7 +23,7 @@ const WeatherDisplay = ({city}) => {
   useEffect(() => {
     if(city){
       setLoading(true);
-      axios.get(`http://api.weatherapi.com/v1/current.json`,{
+      axios.get(`https://api.weatherapi.com/v1/current.json`,{
         params : {
           key : "26b821a97987432a96053602230112",
           q : city,
